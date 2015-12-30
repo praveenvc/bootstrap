@@ -238,6 +238,11 @@ input[type="search"] {
 }
 
 // Radios and checkboxes on same line
+//issue fixed #18582
+.checkbox-inline:before, .radio-inline:before{
+  content:"\a0";
+}
+
 .radio-inline,
 .checkbox-inline {
   display: inline-block;
